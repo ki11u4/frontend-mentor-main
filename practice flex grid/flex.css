@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-parent {
+    width: 1080px;
+    height: 1080px;
+    background-color: rgb(37, 37, 37);
+}
+.container-son-1 {
+    width: 300px;
+    height: auto;
+    background-color: aliceblue;
+}
+.container-son-2 {
+    width: 400px;
+    height: auto;
+    background-color: red;
+}
