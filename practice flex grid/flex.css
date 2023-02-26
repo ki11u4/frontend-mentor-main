@@ -3,18 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container-parent {
-    width: 1080px;
-    height: 1080px;
-    background-color: rgb(37, 37, 37);
+body {
+    padding: 10px;
+    border: solid 1px black;
+    margin-right: 300px;
+    margin-left: 300px;
 }
-.container-son-1 {
-    width: 300px;
-    height: auto;
-    background-color: aliceblue;
+.header {
+    border: solid 1px black;
+    background-color: rgb(203, 203, 203);
+    width: auto;
+    height: 200px;
+    padding: 10px;
 }
-.container-son-2 {
-    width: 400px;
-    height: auto;
-    background-color: red;
+.nav {
+    border: solid 1px black;
+    background-color: skyblue;
+    width: auto;
+    height: 90px;
+}
+.section-1 {
+    border: solid 1px black;
+    background-color: lightgreen;
+    margin: 10px 10px 10px 0;
+    height: 700px;
+}
+
+.header-section {
+    
+}
+.p-1 {
+    
+}
+.p-2 {
+    
+}
+.aside {
+    
 }
