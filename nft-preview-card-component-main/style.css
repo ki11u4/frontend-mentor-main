@@ -50,17 +50,18 @@
  .product {
     --content-padding: 1.5rem;
 
-    width: 400px;
     background-color: var(--clr-card-base-800);
     display: grid;
     border-radius: 1rem;
     padding: var(--content-padding);
     overflow: hidden;
  }
- .product__img {
-    border-radius: 1rem;
-    overflow: hidden;
+ @media (min-width: 400px) {
+    .product {
+        width: 300px;
+    }
  }
+
  .product__content {
     display: grid;
     padding-top: 1rem;
@@ -100,3 +101,29 @@ a {
     text-decoration: none;
     color: var(--clr-neutral-100);
 }
+
+/* hover effect in image */
+.product__img {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+ }
+ .product__img .hover-effect {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    background-color: var(--clr-secondary-500);
+    transition: opacity 0.5s ease;
+ }
+.product__img .hover-effect .svg-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+}
+.hover-effect:hover {
+    opacity: 0.7;
+}
+
