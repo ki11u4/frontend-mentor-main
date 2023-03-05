@@ -1,0 +1,81 @@
+:root {
+    --ff-base: 'Red Hat Display', sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-extrabold: 900;
+
+    --clr-primary-1: hsl(225, 100%, 94%);
+    --clr-primary-2: hsl(245, 75%, 52%);
+
+    --clr-neutral-1: hsl(225, 100%, 98%);
+    --clr-neutral-2: hsl(224, 23%, 55%);
+    --clr-neutral-3: hsl(223, 47%, 23%);
+}
+
+/* General Styling */
+body {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-primary-1);
+
+    display: grid;
+    place-content: center;
+    margin: 2rem;
+
+}
+/* Utilities */
+.flex-group {
+    background-color: hsl(224, 100%, 93%);;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+/* Product Styling */
+.container {
+    max-width: 600px;
+    background-color: var(--clr-neutral-1);
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.product__content {
+    display: grid;
+    gap: 1rem;
+    place-content: center;
+    padding: 1rem;
+}
+h1 {
+    font-weight: var(--fw-extrabold);
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.product__desc {
+    color: var(--clr-neutral-2);
+    text-align: center;
+    font-size: 0.8rem;
+}
+.product__name {
+    color: var(--clr-neutral-3);
+    font-weight: var(--fw-bold);
+}
+.product__price {
+    color: var(--clr-neutral-2);
+}
+button {
+    border: none;
+    padding: 1rem;
+}
+.product__payment {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: var(--clr-primary-2);
+    color: var(--clr-neutral-1);
+}
+.product__cancel {
+    background: none;
+    color: var(--clr-neutral-2);
+}
